@@ -1,0 +1,17 @@
+<div ng-controller="mainController">
+    <hr>
+
+    <table class="table table-striped" style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">Title</th>
+            <th style="text-align: center;">Due Date</th>
+            <th style="text-align: center;">Completed</th>
+        </tr>
+        <tr ng-repeat="a in result">
+            <td>{{ a.Title }}</td>
+            <td>{{ a.DueDate | dueDateFilter }}</td>
+            <td ng-class="completedClass">{{ a.Completed | completedFilter:this }}</td>
+        </tr>
+    </table>
+
+</div>

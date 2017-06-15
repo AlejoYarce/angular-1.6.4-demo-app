@@ -1,0 +1,18 @@
+{
+  "name": "AngularDemoApp",
+  "version": "1.0.0",
+  "description": "Angular 1.6 Demo App",
+  "scripts": {
+    "lite": "lite-server --port 9000",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^1.3.1"
+  },
+  "dependencies": {
+    "angular-moment": "^1.0.1",
+    "moment": "^2.18.1"
+  }
+}
