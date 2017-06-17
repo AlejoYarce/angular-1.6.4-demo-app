@@ -1,17 +1,12 @@
 <div ng-controller="mainController">
+    <span us-spinner="{radius:30, width:8, length: 16}" spinner-key="spinner-1" spinner-start-active="true"></span>
+
+    <div class="x-col-12" style="text-align:center">
+        <span ng-show="infoLoaded" style="font-weight: bold;">Hello... There are {{ total }} activities completed!</span>
+    </div>
+
     <hr>
 
-    <table class="table table-striped" style="text-align: center;">
-        <tr>
-            <th style="text-align: center;">Title</th>
-            <th style="text-align: center;">Due Date</th>
-            <th style="text-align: center;">Completed</th>
-        </tr>
-        <tr ng-repeat="a in result">
-            <td>{{ a.Title }}</td>
-            <td>{{ a.DueDate | dueDateFilter }}</td>
-            <td ng-class="completedClass">{{ a.Completed | completedFilter:this }}</td>
-        </tr>
-    </table>
+    <table-directive ng-show="infoLoaded"></table-directive>
 
 </div>

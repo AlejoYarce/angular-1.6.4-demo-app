@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "angular-moment": "^1.0.1",
-    "moment": "^2.18.1"
+    "angular-spinner": "^1.0.1",
+    "moment": "^2.18.1",
+    "underscore": "^1.8.3"
   }
 }

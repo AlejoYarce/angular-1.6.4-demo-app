@@ -1,0 +1,12 @@
+<table class="table table-striped" style="text-align: center;">
+    <tr>
+        <th style="text-align: center;">{{ header.firstCol }}</th>
+        <th style="text-align: center;">{{ header.secondCol }}</th>
+        <th style="text-align: center;">{{ header.thirdCol }}</th>
+    </tr>
+    <tr ng-repeat="item in result">
+        <td>{{ item.firstData }}</td>
+        <td>{{ item.secondData }}</td>
+        <td ng-class="item.completedClass">{{ item.thirdData }}</td>
+    </tr>
+</table>

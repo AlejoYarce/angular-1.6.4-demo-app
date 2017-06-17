@@ -1,7 +1,8 @@
 // MODULE
 var myApp = angular.module('myApp',
     [
-        'ngRoute'
+        'ngRoute',
+        'angularSpinner'
     ]);
 
 myApp.config(function ($routeProvider) {
